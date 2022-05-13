@@ -1,0 +1,188 @@
+.secao-informacoes {
+    width: 30%;
+}
+
+.secao-informacoes__sneaker-company {
+    color: var(--Laranja);
+    font-size: 0.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.secao-informacoes__titulo {
+    font-size: 2em;
+    line-height: 35px;
+    margin: 10px 0 20px;
+}
+
+.secao-informacoes__descricao-produto {
+    font-size: .8em;
+    line-height: 20px;
+    font-family: var(--font);
+    width: 90%;
+}
+
+.valores {
+    margin: 20px 0;
+}
+
+.valores__preco-porcentagem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.valores__valor-atual {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-right: 15px;
+}
+
+.valores__porcentagem-desconto {
+    background-color: var(--Laranja-claro);
+    color: var(--Laranja);
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px 7px;
+}
+
+.valores__valor-anterior {
+    color: var(--Azul-acinzentado);
+    font-size: .9em;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botoes__adicionar-remover {
+    background-color: var(--Azul-acinzentado-claro);
+    font-weight: bold;
+    width: 30%;
+    margin-right: 15px;
+    padding: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+}
+
+.botoes__botao-menos,
+.botoes__botao-mais {
+    cursor: pointer;
+}
+
+.botoes__botao-adiciona {
+    font-size: 15px;
+    background-color: var(--Laranja);
+    color: var(--Azul-acinzentado-claro);
+    border: none;
+    width: 55%;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.botoes__botao-adiciona:hover {
+    background-color: hsl(26deg 100% 55% / 58%);
+}
+
+.botoes__carrinho {
+    color: var(--Azul-acinzentado-claro);
+    margin-right: 10px;
+    width: 1.3em;
+}
+
+.fa-solid {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .secao-informacoes__titulo {
+        font-size: 1.2em;
+        width: 70%;
+        line-height: normal;
+        margin: 5px 0 10px;
+    }
+
+    .secao-informacoes__descricao-produto {
+        line-height: 15px;
+    }
+
+    .valores {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .valores__valor-atual {
+        font-size: 1.2em;
+    }
+
+    .botoes {
+        flex-direction:  column;
+        align-items: center;
+    }
+
+    .botoes__adicionar-remover {
+        margin: auto;
+    }
+
+    .botoes__adicionar-remover,
+    .botoes__botao-adiciona {
+        width: 100%;
+    }
+
+    .botoes__botao-adiciona {
+        margin-top: 10px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+   .secao-informacoes {
+       width: 100%;
+       padding: 20px 30px;
+   }
+
+   .valores {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+   }
+
+   .valores__preco-porcentagem {
+       margin-right: 20px;
+   }
+
+   .botoes {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .botoes__adicionar-remover,
+   .botoes__botao-adiciona {
+       width: 100%;
+       margin: auto;
+   }
+
+   .botoes__botao-adiciona {
+      height: 3em;
+      margin-top: 15px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+    .secao-informacoes__sneaker-company {
+        font-size: .8em;
+    }
+}
